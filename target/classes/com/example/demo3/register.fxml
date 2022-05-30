@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.controller.user.RegisterController">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="520.0" style="-fx-background-color: #00FF00;">
+         <children>
+            <Label layoutX="67.0" layoutY="28.0" text="User Registration" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="91.0" layoutY="103.0" text="Username">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="91.0" layoutY="122.0" prefHeight="25.0" prefWidth="336.0" promptText="Username" />
+      <Label layoutX="92.0" layoutY="147.0" prefHeight="19.0" prefWidth="66.0" text="Password">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="92.0" layoutY="166.0" prefHeight="25.0" prefWidth="336.0" promptText="Password" />
+      <Label layoutX="92.0" layoutY="197.0" text="Phone">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phone" layoutX="92.0" layoutY="216.0" prefHeight="25.0" prefWidth="336.0" promptText="Phone" />
+      <Button fx:id="registerbutton" layoutX="91.0" layoutY="278.0" mnemonicParsing="false" onAction="#RegisterButtonOnAction" prefHeight="25.0" prefWidth="336.0" style="-fx-background-color: #00FF00;" text="Register" />
+      <Button fx:id="loginbutton" layoutX="91.0" layoutY="310.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="336.0" style="-fx-background-color: #00FF00;" text="Already have an account? Login!" />
+      <Label fx:id="warnmessage" layoutX="92.0" layoutY="251.0" prefHeight="17.0" prefWidth="336.0" textFill="#d31818">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

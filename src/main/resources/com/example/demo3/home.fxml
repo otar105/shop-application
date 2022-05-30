@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.controller.user.HomeController">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="520.0" style="-fx-background-color: #00FF00;">
+         <children>
+            <Label layoutX="67.0" layoutY="28.0" text="OTO shop" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutX="14.0" layoutY="131.0" prefHeight="255.0" prefWidth="209.0">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="118.0" text="name" />
+            <TableColumn fx:id="price" prefWidth="89.0" text="price" />
+         </columns>
+      </TableView>
+      <Label layoutX="339.0" layoutY="93.0" prefHeight="27.0" prefWidth="58.0" text="Chart:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="money" layoutX="397.0" layoutY="93.0" prefHeight="27.0" prefWidth="52.0" text="0$">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="purchasebutton" layoutX="339.0" layoutY="120.0" mnemonicParsing="false" onAction="#purchaseButtonOnAction" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #00FF00;" text="Purchase" />
+      <Button layoutX="14.0" layoutY="91.0" mnemonicParsing="false" onAction="#onAddToChart" prefHeight="31.0" prefWidth="126.0" style="-fx-background-color: #00FF00;" text="Add to chart" />
+      <Button layoutX="339.0" layoutY="159.0" mnemonicParsing="false" onAction="#viewchart" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #00FF00;" text="View chart" />
+   </children>
+</AnchorPane>

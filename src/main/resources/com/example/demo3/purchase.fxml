@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.controller.user.PurchaseController">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="600.0" style="-fx-background-color: #00FF00;">
+         <children>
+            <Label layoutX="67.0" layoutY="28.0" text="Purchase reciept" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="174.0" layoutY="149.0" text="You have successfully bought:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="products" layoutX="174.0" layoutY="180.0" prefHeight="17.0" prefWidth="224.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="200.0" text="for: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="money" layoutX="206.0" layoutY="200.0" prefHeight="27.0" prefWidth="32.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="gobackbutton" layoutX="236.0" layoutY="258.0" mnemonicParsing="false" onAction="#goback" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #00FF00;" text="Go Back" />
+   </children>
+</AnchorPane>

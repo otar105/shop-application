@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.controller.admin.AdminAddController">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="520.0" style="-fx-background-color: #00FF00;">
+         <children>
+            <Label layoutX="67.0" layoutY="28.0" text="Product add" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="loginbutton" layoutX="101.0" layoutY="262.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="25.0" prefWidth="336.0" style="-fx-background-color: #00FF00;" text="Go back" />
+      <Button fx:id="addbutton" layoutX="101.0" layoutY="230.0" mnemonicParsing="false" onAction="#addButtonOnAction" prefHeight="25.0" prefWidth="336.0" style="-fx-background-color: #00FF00;" text="Add" />
+      <Label layoutX="102.0" layoutY="157.0" prefHeight="19.0" prefWidth="66.0" text="price">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="101.0" layoutY="132.0" prefHeight="25.0" prefWidth="336.0" promptText="name" />
+      <Label layoutX="101.0" layoutY="113.0" text="name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="price" layoutX="101.0" layoutY="176.0" prefHeight="25.0" prefWidth="336.0" promptText="price" />
+   </children>
+</AnchorPane>

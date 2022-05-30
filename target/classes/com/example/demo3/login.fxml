@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.controller.LoginController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="523.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="123.0" layoutY="152.0" prefHeight="42.0" prefWidth="80.0" text="Username">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="username" layoutX="195.0" layoutY="160.0" promptText="Username" />
+                <Label layoutX="123.0" layoutY="186.0" prefHeight="42.0" prefWidth="80.0" text="Password">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="password" layoutX="195.0" layoutY="194.0" promptText="Password" />
+                <Button fx:id="loginbutton" layoutX="132.0" layoutY="249.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="219.0" style="-fx-background-color: #7CFC00;" text="Login" />
+                <ImageView fitHeight="47.0" fitWidth="49.0" layoutX="218.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../download.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="registerbutton" layoutX="132.0" layoutY="280.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="25.0" prefWidth="219.0" style="-fx-background-color: #7CFC00;" text="Don't have an account? Register!" />
+                <Label fx:id="warnmessage" layoutX="132.0" layoutY="227.0" prefHeight="17.0" prefWidth="211.0" textFill="#d32b2b" />
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>
